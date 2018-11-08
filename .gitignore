@@ -1,0 +1,10 @@
+node_modules
+etc/keys/dev.js
+etc/keys/prod.js
+etc/keys/private.key
+etc/keys/public.key
+etc/settings/dev.js
+etc/settings/prod.js
+dockerfile
+sql
+*.sql
