@@ -4,7 +4,6 @@ import ReduxPromise from 'redux-promise';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import reducers from '../reducers';
-console.log(reducers);
 import Test from './Test';
 const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
