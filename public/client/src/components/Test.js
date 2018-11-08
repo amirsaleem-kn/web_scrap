@@ -1,7 +1,11 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
+
 class Test extends Component {
     render(){
-        return(<h1>Hello World</h1>)
+        return(
+            <div>Hello World</div>
+        )
     }
 }
+
 export default Test;

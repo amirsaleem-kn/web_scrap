@@ -5,7 +5,11 @@ import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom';
 import React from 'react';
 app.get('*', function(req, res){
-    const body = renderToString(<StaticRouter location={req.url} context={{}}><App /></StaticRouter>);
+    const body = renderToString(
+      <StaticRouter location={req.url} context={{}}>
+        <App />
+      </StaticRouter>
+    );
     const title = 'Server side Rendering with Styled Components';
     res.send(
       Html({

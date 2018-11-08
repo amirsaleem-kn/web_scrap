@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 
 const rootReducers = combineReducers({
-    test: "yes"
+    test: {}
 });
 
 export default rootReducers;
