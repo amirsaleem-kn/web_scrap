@@ -8,3 +8,5 @@ etc/settings/prod.js
 dockerfile
 sql
 *.sql
+dist/*
+public/client/dist/*
