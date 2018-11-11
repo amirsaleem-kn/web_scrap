@@ -1,3 +1,4 @@
+const path = require('path');
 const Html = ({ body, title, scriptSrc }) => `
   <!DOCTYPE html>
   <html>
@@ -7,7 +8,7 @@ const Html = ({ body, title, scriptSrc }) => `
     <body style="margin:0">
       <div id="app">${body}</div>
     </body>
-    <script src = "/public/client/dist/bundle.js"></script>
+    
   </html>
 `;
 

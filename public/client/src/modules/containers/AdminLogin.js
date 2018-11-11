@@ -7,13 +7,12 @@ class AdminLogin extends Component {
     constructor(props){
         super(props);
         this.state = {
-            username: 'amirsaleem96',
-            password: null
+            username: '',
+            password: ''
         };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
     onFormChange (e, type) {
-        console.log(type);
         if(type == 'username'){
             this.setState({ username: e.target.value });
         } else if (type == 'password') {
@@ -21,7 +20,6 @@ class AdminLogin extends Component {
         }
     }
     handleSubmit(e) {
-        console.log('here');
         e.preventDefault();
         this.props.handleAdminLogin(this.state.username, this.state.password);
         alert('something went wrong');        
@@ -32,9 +30,8 @@ class AdminLogin extends Component {
                 <form onSubmit = {this.handleSubmit}>
                     <input type = 'text' value = {this.state.username} onChange = { (e) => this.onFormChange.bind(this, e, 'username')}/>
                     <input type = 'password' value = {this.state.password} onChange = {(e) => this.onFormChange.bind(this, e, 'password')}/>
-                    {/* <button onClick = {() => {alert('yes')}}>Login</button> */}
+                    <button onClick = {() => {alert('yes')}}>Login</button>
                 </form>
-                <button onClick = {() => {alert('yes')}}>Login</button>
             </div>
         )
     }
